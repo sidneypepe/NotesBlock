@@ -14,6 +14,14 @@ const showNotes = ()=>{
    
 }
 
+const searchIcon = document.querySelector('.search-container #search-icon')
+
+function focusSearchInput() {
+  document.getElementById('search-input').focus()
+}
+
+searchIcon.addEventListener('click', focusSearchInput)
+
 const clearNotes = ()=>{
     notesConteiner.replaceChildren([])
 }
